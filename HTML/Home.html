@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" type="text/css" href="//undertalefonts.duodecima.technology/webfonts/stylesheet.css=Determination Mono">
+    <link rel="stylesheet" type="text/css"
+        href="//undertalefonts.duodecima.technology/webfonts/stylesheet.css=Determination Mono">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tough Gameplay</title>
 </head>
-<body> <style>
-    li  {color: white;}
-    body {
-        background-color: rgb(0, 0, 0);
+
+<body>
+    <style>
+        li {
+            color: white;
         }
-    @font-face {
-        font-family: ToughFontGameplay;
-        src: url("./PixelOperatorMono-Bold.ttf");
-    }
-    .firsth1 {
-        font-family: ToughFontGameplay;
-        color: rgb(255, 255, 255);
 
-    }
-    .firsth2 {
-    color: red;
-    }
-</style>
-        <h1 class="firsth1"> I am the rgb color: 255, 255, 255 with the font Determination Mono &#128513; </h1>
-        <h1 class="firsth2">wow. sadly im red with the default font. &#128577; </h1>
-        <ul>
-               <a href="./brokenlink.html"> <li>tough the first game</li></a>
-               <a href="./brokenlink.html"> <li>tough the second game</li> </a>
-                <a href="./ToughRPG.html"><li>tough the origins</li></a>
+        body {
+            background-color: rgb(0, 0, 0);
+        }
 
-        </ul>
-        <button onclick="location.href='./ToughRPG.html'" type="button">Tough Gameplay</button>
+        @font-face {
+            font-family: ToughFontGameplay;
+            src: url("./PixelOperatorMono-Bold.ttf");
+        }
+
+        .firsth1 {
+            font-family: ToughFontGameplay;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .firsth2 {
+            color: red;
+        }
+    </style>
+    <h1 class="firsth1"> I am the rgb color: 255, 255, 255 with the font Determination Mono &#128513; </h1>
+    <h1 class="firsth2">wow. sadly im red with the default font. &#128577; </h1>
+    <ul>
+        <a href="./brokenlink.html">
+            <li>tough the first game</li>
+        </a>
+        <a href="./brokenlink.html">
+            <li>tough the second game</li>
+        </a>
+        <a href="./ToughRPG.html">
+            <li>tough the origins</li>
+        </a>
+
+    </ul>
+    <button onclick="RandomizerGame()" type="button">Tough Raten</button>
+    <script>
+        function RandomizerGame() {
+            // Randomizer 100
+            const zufallsZahl = Math.floor(Math.random() * 100);
+            let rate = window.prompt("Rate mal welche Zahl!");
+            let ratenMalzahl = parseInt(rate);
+            console.log("Answer: ", zufallsZahl)
+            while (ratenMalzahl !== zufallsZahl) {
+
+                if (zufallsZahl > ratenMalzahl) {
+                    rate = window.prompt("Zahl zu klein!")
+                } else if (zufallsZahl < ratenMalzahl) {
+                    rate = window.prompt("Zahl zu Gross!")
+                }
+                ratenMalzahl = parseInt(rate)
+            }
+            window.alert("Richtig!!!")
+        }
+    </script>
 </body>
+
 </html>
