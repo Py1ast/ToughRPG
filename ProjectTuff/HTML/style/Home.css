@@ -1,0 +1,22 @@
+li {
+    color: white;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+@font-face {
+    font-family: ToughFontGameplay;
+    src: url("../source/PixelOperatorMono-Bold.ttf");
+}
+
+.firsth1 {
+    font-family: ToughFontGameplay;
+    color: rgb(255, 255, 255);
+
+}
+
+.firsth2 {
+    color: red;
+}
